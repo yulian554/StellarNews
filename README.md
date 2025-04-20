@@ -10,6 +10,13 @@ Stellar News es una aplicación iOS moderna que proporciona las últimas noticia
 * **Perfil de Usuario:** Experiencia de usuario personalizada con configuración de perfil
 
 ### Capturas de Pantalla
+![Captura de pantalla 2025-04-20 a la(s) 6 26 28 p m](https://github.com/user-attachments/assets/6a17daff-9878-4b25-a235-75ffa939064c)
+
+![Captura de pantalla 2025-04-20 a la(s) 6 27 06 p m](https://github.com/user-attachments/assets/726575f7-413e-40fb-9fe3-a7b3fa01ef23)
+
+![Captura de pantalla 2025-04-20 a la(s) 6 27 21 p m](https://github.com/user-attachments/assets/2366459d-9e07-40e5-a8f8-81241005d7a2)
+
+![Captura de pantalla 2025-04-20 a la(s) 6 27 36 p m](https://github.com/user-attachments/assets/ed837944-ca93-4e59-acfd-74a0a9280049)
 
 ### Arquitectura
 La aplicación está construida usando:

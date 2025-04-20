@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Profile" id="Y6W-OH-hqX" customClass="ProfileViewController" customModule="Space_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lrp-zw-moj">
+                                <rect key="frame" x="76.666666666666686" y="140.66666666666669" width="240" height="236.66666666666669"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="ColorPrimary"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="n92-GT-Isk"/>
+                                    <constraint firstAttribute="height" constant="240" id="o7C-hv-9iQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keG-LF-gub">
+                                <rect key="frame" x="30" y="728" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YBj-nz-UIt"/>
+                                    <constraint firstAttribute="width" constant="60" id="rnx-JP-TNZ"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorPrimary"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3eu-Bd-SEy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBT-8x-ANt">
+                                <rect key="frame" x="303" y="728" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EGO-Q1-iaR"/>
+                                    <constraint firstAttribute="width" constant="60" id="lmO-2f-h8F"/>
+                                </constraints>
+                                <color key="tintColor" name="ColorPrimary"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="deletePhoto:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="PJD-i6-dC0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pta-2n-Hrs">
+                                <rect key="frame" x="10" y="69" width="50" height="35"/>
+                                <color key="tintColor" name="ColorPrimary"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system"/>
+                                <connections>
+                                    <action selector="onBack:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Rb3-CZ-om3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lrp-zw-moj" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="6R6-ma-jgf"/>
+                            <constraint firstItem="Pta-2n-Hrs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="XNw-Pi-xxs"/>
+                            <constraint firstItem="Lrp-zw-moj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="a5J-4y-gMd">
+                                <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="keG-LF-gub" secondAttribute="bottom" constant="30" id="aNv-Tl-2at"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="mBT-8x-ANt" secondAttribute="bottom" constant="30" id="i6z-VP-HJa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mBT-8x-ANt" secondAttribute="trailing" constant="30" id="ixG-Qn-bxk"/>
+                            <constraint firstItem="keG-LF-gub" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="l5Q-3L-h0y"/>
+                            <constraint firstItem="Pta-2n-Hrs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="nms-rO-gqV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userImage" destination="Lrp-zw-moj" id="Tth-xW-D6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="95"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="trash.fill" catalog="system" width="117" height="128"/>
+        <namedColor name="ColorPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

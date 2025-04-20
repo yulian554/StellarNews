@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCollectionViewCell" id="gTV-IL-0wX" customClass="BannerCollectionViewCell" customModule="Space_News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tnf-4X-Spp">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-XP-fUk">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojk-0V-8VC" userLabel="Label View">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-7Z-hWU">
+                                        <rect key="frame" x="20" y="15" width="360" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="eQU-2r-g95"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" name="ColorPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-TL-7Jl">
+                                        <rect key="frame" x="20" y="164" width="360" height="21"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" name="ColorPrimary"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Blck01"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f4P-TL-7Jl" secondAttribute="trailing" constant="20" id="BNf-R2-eFi"/>
+                                    <constraint firstAttribute="bottom" secondItem="f4P-TL-7Jl" secondAttribute="bottom" constant="15" id="CCl-xB-QPn"/>
+                                    <constraint firstItem="Pda-7Z-hWU" firstAttribute="top" secondItem="ojk-0V-8VC" secondAttribute="top" constant="15" id="FfC-tn-LbM"/>
+                                    <constraint firstItem="Pda-7Z-hWU" firstAttribute="leading" secondItem="ojk-0V-8VC" secondAttribute="leading" constant="20" id="Quf-TU-jAd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pda-7Z-hWU" secondAttribute="trailing" constant="20" id="Weq-fi-QcF"/>
+                                    <constraint firstItem="f4P-TL-7Jl" firstAttribute="centerX" secondItem="ojk-0V-8VC" secondAttribute="centerX" id="jFE-hA-dgE"/>
+                                    <constraint firstItem="Pda-7Z-hWU" firstAttribute="centerX" secondItem="ojk-0V-8VC" secondAttribute="centerX" id="mGT-z8-yRd"/>
+                                    <constraint firstItem="f4P-TL-7Jl" firstAttribute="leading" secondItem="ojk-0V-8VC" secondAttribute="leading" constant="20" id="qud-ap-X11"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ojk-0V-8VC" firstAttribute="leading" secondItem="Tnf-4X-Spp" secondAttribute="leading" id="1vg-D3-4bN"/>
+                            <constraint firstItem="ojk-0V-8VC" firstAttribute="top" secondItem="Tnf-4X-Spp" secondAttribute="top" id="8xV-8y-jeq"/>
+                            <constraint firstAttribute="bottom" secondItem="ojk-0V-8VC" secondAttribute="bottom" id="KjR-mS-Huk"/>
+                            <constraint firstAttribute="bottom" secondItem="bbF-XP-fUk" secondAttribute="bottom" id="Znx-RB-2HR"/>
+                            <constraint firstAttribute="trailing" secondItem="ojk-0V-8VC" secondAttribute="trailing" id="Zta-v1-dnA"/>
+                            <constraint firstItem="bbF-XP-fUk" firstAttribute="leading" secondItem="Tnf-4X-Spp" secondAttribute="leading" id="eum-0T-aK0"/>
+                            <constraint firstAttribute="trailing" secondItem="bbF-XP-fUk" secondAttribute="trailing" id="lCt-AD-y9g"/>
+                            <constraint firstItem="bbF-XP-fUk" firstAttribute="top" secondItem="Tnf-4X-Spp" secondAttribute="top" id="yJl-zB-HCW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tnf-4X-Spp" secondAttribute="trailing" id="Y6n-yS-WII"/>
+                <constraint firstAttribute="bottom" secondItem="Tnf-4X-Spp" secondAttribute="bottom" id="m3P-JG-FLo"/>
+                <constraint firstItem="Tnf-4X-Spp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qeu-zU-uGY"/>
+                <constraint firstItem="Tnf-4X-Spp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sZy-sk-FNP"/>
+            </constraints>
+            <size key="customSize" width="400" height="200"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="containerView" destination="Tnf-4X-Spp" id="mcg-VE-Afn"/>
+                <outlet property="image" destination="bbF-XP-fUk" id="cTg-8i-kk5"/>
+                <outlet property="labelView" destination="ojk-0V-8VC" id="QSR-CC-G48"/>
+                <outlet property="newsSiteLabel" destination="f4P-TL-7Jl" id="ySI-nm-1Qa"/>
+                <outlet property="titleLabel" destination="Pda-7Z-hWU" id="y5S-og-YxG"/>
+            </connections>
+            <point key="canvasLocation" x="468.70229007633588" y="73.239436619718319"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Blck01">
+            <color red="0.048561071018254694" green="0.051271288154437045" blue="0.050637267028197007" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ColorPrimary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
